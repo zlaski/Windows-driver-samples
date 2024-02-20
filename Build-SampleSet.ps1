@@ -8,6 +8,8 @@ param(
     [int]$ThrottleLimit = 0
 )
 
+Set-PSDebug -Trace 2
+
 $root = Get-Location
 $ThrottleFactor = 5
 $LogicalProcessors = (Get-CIMInstance -Class 'CIM_Processor' -Verbose:$false).NumberOfLogicalProcessors

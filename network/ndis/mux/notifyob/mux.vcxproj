@@ -24,6 +24,8 @@
     <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
     <Platform Condition="'$(Platform)' == ''">Win32</Platform>
     <SampleGuid>{67118C02-9183-4F2D-8E60-3D4F02B62EA9}</SampleGuid>
+    <Inf2CatToolPath>d:\dev\tools</Inf2CatToolPath>
+    <InfToolPath>d:\dev\tools</InfToolPath>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

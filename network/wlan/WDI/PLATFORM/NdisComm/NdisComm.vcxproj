@@ -106,6 +106,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C0A51792-1338-4294-ADAA-EDC4EE30CF05}</ProjectGuid>
+    <Inf2CatToolPath>d:\dev\tools</Inf2CatToolPath>
+    <InfToolPath>d:\dev\tools</InfToolPath>
+  </PropertyGroup>
   <PropertyGroup Label="PropertySheets">
     <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -125,9 +130,6 @@
   <ImportGroup Label="PreConfiguration">
     <Import Project="$(VCTargetsPath)\WDKConversion\PreConfiguration.props" />
   </ImportGroup>
-  <PropertyGroup Label="Globals">
-    <ProjectGuid>{C0A51792-1338-4294-ADAA-EDC4EE30CF05}</ProjectGuid>
-  </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='WinBlue Debug|Arm'">
     <TargetVersion>WindowsV6.3</TargetVersion>
     <UseDebugLibraries>True</UseDebugLibraries>

@@ -26,6 +26,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{956B060D-1055-4584-9CF4-9FE14C428545}</ProjectGuid>
+    <Inf2CatToolPath>d:\dev\tools</Inf2CatToolPath>
+    <InfToolPath>d:\dev\tools</InfToolPath>
+  </PropertyGroup>
   <PropertyGroup Label="PropertySheets">
     <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -44,9 +49,6 @@
   <ImportGroup Label="PreConfiguration">
     <Import Project="$(VCTargetsPath)\WDKConversion\PreConfiguration.props" />
   </ImportGroup>
-  <PropertyGroup Label="Globals">
-    <ProjectGuid>{956B060D-1055-4584-9CF4-9FE14C428545}</ProjectGuid>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win10 Debug|Arm'" Label="Configuration">
     <TargetVersion>Windows10</TargetVersion>
     <UseDebugLibraries>True</UseDebugLibraries>

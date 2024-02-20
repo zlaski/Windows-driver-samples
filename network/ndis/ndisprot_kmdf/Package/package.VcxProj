@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{346D9284-B69E-40A5-9584-084D7BE578B2}</ProjectGuid>
+    <SampleGuid>{9B10F9EB-6405-4756-A5C7-FB9F5A528BE5}</SampleGuid>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+    <Inf2CatToolPath>d:\dev\tools</Inf2CatToolPath>
+    <InfToolPath>d:\dev\tools</InfToolPath>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\60\nprt6wdf.vcxproj">
       <Project>{D01AA8E0-4817-4C0F-BDD7-B367F1A4B680}</Project>
@@ -34,11 +41,6 @@
     <Configuration>Debug</Configuration>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Label="Globals">
-    <ProjectGuid>{346D9284-B69E-40A5-9584-084D7BE578B2}</ProjectGuid>
-    <SampleGuid>{9B10F9EB-6405-4756-A5C7-FB9F5A528BE5}</SampleGuid>
-    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <TargetVersion>Windows10</TargetVersion>
     <UseDebugLibraries>true</UseDebugLibraries>

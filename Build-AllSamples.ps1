@@ -43,6 +43,8 @@ param(
     [int]$ThrottleLimit
 )
 
+Set-PSDebug -Trace 2
+
 $Verbose = $false
 if ($PSBoundParameters.ContainsKey('Verbose')) {
     $Verbose = $PsBoundParameters.Get_Item('Verbose')
